@@ -9,6 +9,7 @@ const db = low(adapter);
 
 const bytesPerMbps = 125000;
 
+// rounds num to precision decimals
 const round = (num, precision = 0) => {
   const multiplier = Math.pow(10, precision);
   return Math.round(num * multiplier) / multiplier;
