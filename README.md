@@ -1,4 +1,4 @@
-network speed logger. results will be saved to `db.json`.
+network speed logger. results will be saved to `db.json`. uses [speedtest-net](https://github.com/ddsol/speedtest.net) and [pm2](https://pm2.keymetrics.io/).
 
 `npm run` to check available commands, but:
 * `npm run start`

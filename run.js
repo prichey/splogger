@@ -50,6 +50,7 @@ const run = async () => {
     const res = await speedTest({
       acceptLicense: true,
     });
+
     const formattedResult = formatResult(res);
     db.get('logs').push(formattedResult).write();
 
