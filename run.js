@@ -49,9 +49,11 @@ const run = async () => {
     const res = await speedTest({
       acceptLicense: true,
     });
-    db.get('logs').push(formatResult(res)).write();
+    const formattedResult = formatResult(res);
+    db.get('logs').push(formattedResult).write();
 
-    console.log('success!');
+    const { down, up, ping } = formattedResult;
+    console.log(`success! (${down} down, ${up} up, ${ping} ping)`);
   } catch (err) {
     console.error('failure:', err);
   }

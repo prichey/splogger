@@ -1,9 +1,7 @@
-# splog
-
 network speed logger. results will be saved to `db.json`.
 
-available commands (`npm run` to check):
-* `npm run start` to start cron (runs every 30 min)
+`npm run` to check available commands, but:
+* `npm run start`
 * `npm run stop`
 * `npm run once` to perform test once
-* `npm run logs`
+* `npm run logs` to tail pm2 logs

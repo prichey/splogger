@@ -3,6 +3,12 @@ module.exports = {
     {
       name: 'splog',
       script: 'run.js',
+      watch: true,
+      autorestart: false,
+      instances: 1,
+      exec_mode: 'fork',
+      cron_restart: '0,30 * * * *',
+      log_date_format: 'YYYY-MM-DD HH:mm Z',
     },
   ],
   deploy: {
