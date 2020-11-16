@@ -19,8 +19,7 @@ results will be saved to `db.json` and like this:
       "up": "93.78mbps",
       "packetLoss": 0,
       "url": "https://www.speedtest.net/result/c/feea2741-9d28-43ef-b2e6-789d35853357"
-    },
-    ...
+    }
   ]
 }
 ```
