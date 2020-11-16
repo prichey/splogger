@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'splog',
+      name: 'splogger',
       script: 'run.js',
       watch: true,
       autorestart: false,
