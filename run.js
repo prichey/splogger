@@ -15,6 +15,7 @@ const round = (num, precision = 0) => {
   return Math.round(num * multiplier) / multiplier;
 };
 
+// result shape here: https://github.com/ddsol/speedtest.net#return-value
 const formatResult = (res) => {
   const baseObj = {
     id: get(res, 'result.id', shortid.generate()),
